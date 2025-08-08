@@ -1,3 +1,5 @@
+import 'Future.dart';
+
 void main() {
   print('Hello, Dart!');
 
@@ -8,5 +10,6 @@ void main() {
   print('==========');
   print('');
   print('');
+  myCall();
   print('$name is a developer and is $age years old.');
 }
