@@ -1,16 +1,14 @@
 import 'Future.dart';
 
 void main() {
-  print('Hello, Dart!');
+  print('Start the run');
 
   int age = 30;
   String name = 'Alice';
-  //bool isDeveloper = true;
 
-  print('==========');
-  print('');
-  print('');
   //future function
-  myCall();
+  myCall().then((a) {
+    print("after 5 seconds");
+  });
   print('$name is a developer and is $age years old.');
 }
