@@ -1,12 +1,15 @@
 import 'Future.dart';
 
-void main() {
+Future<void> main() async {
   print('Start the run');
 
   int age = 30;
   String name = 'Alice';
 
-  //future function
+  //future functions
+
+  await printText();
+
   myCall().then((a) {
     print("after 5 seconds");
   });
