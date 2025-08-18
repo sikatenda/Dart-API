@@ -8,7 +8,15 @@ Future<void> main() async {
 
   //future functions
 
-  await printText();
+  //String b = await printText();
+  //print(b);
+
+  try {
+    String b = await printText();
+    print(b);
+  } catch (e) {
+    print('the end');
+  }
 
   myCall().then((a) {
     print("after 5 seconds");

@@ -6,5 +6,6 @@ Future myCall() {
 }
 
 Future<String> printText() async {
+  throw Exception();
   return "The text will be printed after 5 second";
 }
