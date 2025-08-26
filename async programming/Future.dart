@@ -1,11 +1,15 @@
 //Future function is here
 import 'dart:async';
 
-Future myCall() {
-  return Future.delayed(Duration(seconds: 5));
+List<int> myCall() {
+  var myList = [10, 20, 30];
+  Future.delayed(Duration(seconds: 5));
+
+  return myList;
 }
 
-Future<String> printText() async {
-  throw Exception();
-  return "The text will be printed after 5 second";
+Future<Map<String, int>> printText() async {
+  //throw Exception();
+  var myMaps = {"jacques": 10, "nathan": 20, "emile": 30};
+  return myMaps;
 }
