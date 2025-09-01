@@ -3,8 +3,8 @@ import 'Future.dart';
 Future<void> main() async {
   print('Start the run');
 
-  int age = 30;
-  String name = 'Alice';
+  //int age = 30;
+  //String name = 'Alice';
 
   //future functions
 
@@ -22,12 +22,14 @@ Future<void> main() async {
 
   */
 
-  var list = await myCall();
+  input();
+
+  var list = await myCall(myList);
   for (var a in list) {
     print(a);
   }
 
-  var maps = await printText();
+  var maps = await printText(myMaps);
   for (var a in maps.entries) {
     print("${a.key}: ${a.value}");
   }
